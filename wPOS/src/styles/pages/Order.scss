@@ -1,0 +1,118 @@
+.order {
+    .menu {
+        position: relative;
+        .item {
+            // 選單項目滑動
+            .flex-container {
+                display: flex;
+                /* primary flex container */
+                flex-direction: row;
+                /* horizontal alignment of flex items (default value; can be omitted) */
+                align-items: stretch;
+                /* will apply equal heights to flex items (default value; can be omitted) */
+                // height: 150px; // 高度由 js 動態決定
+                .flex-item {
+                    display: flex;
+                    /* nested flex container */
+                    flex-direction: column;
+                    /* vertical alignment of flex items */
+                    justify-content: center;
+                    /* center flex items vertically */
+                    align-items: center;
+                    /* center flex items horizontally */
+                    flex: 1;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    margin: 5px;
+                    padding: 1em;
+                    font-size: $fontValue;
+                    text-align: center;
+                }
+            }
+        }
+        .item-nav {
+            position: absolute;
+            bottom: 0;
+            .btn {
+              span {
+                font-size: $fontTitle;
+              }
+              padding: 10px 0;
+            }
+        }
+    }
+    .content {
+        .panel.center-container {
+
+            .panel-heading{
+                font-size: $fontTitle;
+            }
+            .panel-body{
+
+                form{
+                    //position: relative;
+                    .order-details {
+                        // 該 div height 由 js 動態決定
+                        overflow-y: auto; // 依據 div height 作用自動滾輪
+
+                        table{
+                            font-size: $tableFont;
+                        }
+                        table {
+                            tbody tr td,
+                            thead tr th {
+                                &:nth-child(1) {
+                                    width: 45%;
+                                }
+                                &:nth-child(2),
+                                &:nth-child(3){
+                                    width: 20%;
+                                }
+                                &:nth-child(4){
+                                    width: 10%;
+                                }
+                                &:nth-child(5) {
+                                    width: 5%;
+                                }
+                            }
+                        }
+                    }
+                    .order-submit {
+                        //margin-bottom: 15px;
+                        //position: absolute;
+                        //bottom: 0;
+                        //left: 0;
+                        button[type=submit] {
+                            height: $orderButtonHeight * 2;
+                            font-size: $fontValue;
+                        }
+
+                        select[name=table] {
+                            height: $orderButtonHeight;
+                        }
+
+                        .total{
+                            > div {
+                                height: $orderButtonHeight;
+                            }
+                            .title{
+                                font-size: $fontValue;
+                                padding: 6px;
+                                color: #333;
+                                background-color: #f5f5f5;
+                                border-color: #ddd;
+                                border-bottom: 1px solid transparent;
+                                border-top-left-radius: 3px;
+                                border-top-right-radius: 3px;
+                            }
+                            .value {
+                                font-size: $fontValue;
+                                padding: 6px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

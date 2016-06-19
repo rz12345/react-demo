@@ -1,0 +1,8 @@
+.home {
+  .content {
+    .home-details {
+      // 該 div height 由 js 動態決定
+      overflow-y: auto; // 依據 div height 作用自動滾輪
+    }
+  }
+}

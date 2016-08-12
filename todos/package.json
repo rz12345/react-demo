@@ -1,0 +1,33 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/entry.js",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "npm-run-all --parallel \"watch-*\"",
+    "build-js": "browserify src/entry.jsx | uglifyjs -o ./bundle.js",
+    "watch-js": "watchify src/entry.jsx -do ./bundle.js -v"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^10.2.4",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.10.0",
+    "npm-run-all": "^2.3.0",
+    "uglify": "^0.1.5",
+    "watchify": "^3.7.0"
+  }
+}

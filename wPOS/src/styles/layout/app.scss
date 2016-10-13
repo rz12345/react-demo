@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+
+// 滿版 window 高度, ref:http://www.bootply.com/97103
+.center-container {
+  height:100%;
+}
+
+.center-row {
+  height:100%;
+  background-color: #9ac7d5;
+  background-size:cover;
+  overflow-y: hidden;
+}
+
+
+#app{
+  height: 100%;
+  font-family: "微軟正黑體", "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto 0 0;
+  /* Pad bottom by footer height */
+  padding: 0 0 0 0;
+
+  > .center-container {
+    padding: 50px 0 0 0;
+    margin:0;
+  }
+}

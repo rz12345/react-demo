@@ -1,0 +1,31 @@
+{
+  "name": "wPOS",
+  "version": "0.0.1",
+  "description": "A web-based POS demo",
+  "devDependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^10.2.4",
+    "fetch": "^1.0.1",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "npm-run-all": "^2.1.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1",
+    "uglify": "^0.1.5",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "npm-run-all --parallel \"watch-*\"",
+    "build-js": "browserify src/entry.jsx | uglifyjs -o ./bundle.js",
+    "watch-js": "watchify src/entry.jsx -do ./bundle.js -v",
+    "build-css": "node-sass --include-path src/styles src/styles/entry.scss ./main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}

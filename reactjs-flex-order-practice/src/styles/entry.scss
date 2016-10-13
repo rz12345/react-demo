@@ -1,0 +1,19 @@
+// variables
+@import 'variables/font.scss';
+@import 'variables/button.scss';
+
+// layout
+@import 'layout/grid.scss';
+@import 'layout/app.scss';
+
+// Payment style
+@import 'pages/Order.scss';
+
+// input style
+@import 'components/input.scss';
+
+// loading style
+// ref:http://tobiasahlin.com/spinkit/
+@import 'components/loading';
+
+@import 'components/datetime.scss';

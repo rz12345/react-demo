@@ -1,0 +1,24 @@
+.datetime {
+    .time {
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .date {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin-top: 5px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    height: 50px; // nav menu bar 的高度
+    text-align: center;
+    font-size: 0;
+    &::before {
+        content: '';
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}

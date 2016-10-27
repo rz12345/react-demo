@@ -1,8 +1,8 @@
 import {
     connect
 } from 'react-redux'
-import {updateOrderStyle} from '../actions/order'
-import OrderContent from '../components/OrderContent.jsx'
+import {updateOrderStyle} from '../../actions/ui/Order/order'
+import OrderContent from '../../components/Order/OrderContent.jsx'
 
 function mapStateToProps(state) {
     return {

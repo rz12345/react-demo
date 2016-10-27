@@ -1,10 +1,8 @@
 import React, {Component, PropTypes} from 'react'
 import {connect} from 'react-redux'
-import {fetchCategoryData} from '../actions/categories'
-import {fetchItemData} from '../actions/items'
-import {fetchTableData} from '../actions/tables'
-import OrderMenu from '../components/OrderMenu.jsx'
-import OrderContent from '../containers/OrderContent'
+import {fetchCategoryData, fetchItemData, fetchTableData} from '../actions/data'
+import OrderMenu from '../components/Order/OrderMenu.jsx'
+import OrderContent from '../containers/Order/OrderContent'
 
 class App extends Component {
     componentDidMount() {

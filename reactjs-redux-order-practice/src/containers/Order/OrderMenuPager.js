@@ -1,7 +1,7 @@
 import {connect} from 'react-redux'
-import {changeMenuPageBy} from '../actions/pages'
-import {countMenuPage} from '../helpers'
-import OrderMenuPager from '../components/OrderMenuPager.jsx'
+import {changeMenuPageBy} from '../../actions/ui/Order/pages'
+import {countMenuPage} from '../../helpers'
+import OrderMenuPager from '../../components/Order/OrderMenuPager.jsx'
 
 function mapStateToProps(state) {
     return {

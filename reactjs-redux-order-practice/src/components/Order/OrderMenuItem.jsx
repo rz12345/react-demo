@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react'
-import {getItemRowStyle} from '../helpers'
+import {getItemRowStyle} from '../../helpers'
 
 class OrderMenuItem extends Component {
     componentDidMount() {

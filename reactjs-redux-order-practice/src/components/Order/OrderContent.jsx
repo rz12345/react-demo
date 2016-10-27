@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
-import {getOrderContentStyle} from '../helpers'
-import OrderContentDetail from '../containers/OrderContentDetail'
-import OrderContentSubmit from '../containers/OrderContentSubmit'
+import {getOrderContentStyle} from '../../helpers'
+import OrderContentDetail from '../../containers/Order/OrderContentDetail'
+import OrderContentSubmit from '../../containers/Order/OrderContentSubmit'
 
 class OrderContent extends Component {
     componentDidMount() {

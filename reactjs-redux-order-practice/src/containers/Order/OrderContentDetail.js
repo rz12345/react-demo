@@ -5,8 +5,8 @@ import {
     removeItemFromOrder,
     removeAdditionFromOrder,
     updateAddition
-} from '../actions/order'
-import OrderContentDetail from '../components/OrderContentDetail.jsx'
+} from '../../actions/ui/Order/order'
+import OrderContentDetail from '../../components/Order/OrderContentDetail.jsx'
 
 function mapStateToProps(state) {
     return {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import OrderMenuCategory from '../containers/OrderMenuCategory'
-import OrderMenuItem from '../containers/OrderMenuItem'
-import OrderMenuPager from '../containers/OrderMenuPager'
+import OrderMenuCategory from '../../containers/Order/OrderMenuCategory'
+import OrderMenuItem from '../../containers/Order/OrderMenuItem'
+import OrderMenuPager from '../../containers/Order/OrderMenuPager'
 
 const OrderMenu = () => (
     <div className="menu col-md-6 center-container">

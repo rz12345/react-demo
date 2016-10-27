@@ -6,8 +6,8 @@ import {
     toggleToGoStatus,
     toggleWhenStatus,
     sumbitOrder
-} from '../actions/order'
-import OrderContentSubmit from '../components/OrderContentSubmit.jsx'
+} from '../../actions/ui/Order/order'
+import OrderContentSubmit from '../../components/Order/OrderContentSubmit.jsx'
 
 function mapStateToProps(state) {
     return {

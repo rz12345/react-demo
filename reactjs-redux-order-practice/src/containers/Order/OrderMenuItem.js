@@ -1,8 +1,8 @@
 import {connect} from 'react-redux'
-import {updateMenuStyle} from '../actions/items'
-import {addItemToOrder} from '../actions/order'
-import {filterItemsBy} from '../helpers'
-import OrderMenuItem from '../components/OrderMenuItem.jsx'
+import {updateMenuStyle} from '../../actions/ui/Order/items'
+import {addItemToOrder} from '../../actions/ui/Order/order'
+import {filterItemsBy} from '../../helpers'
+import OrderMenuItem from '../../components/Order/OrderMenuItem.jsx'
 
 function mapStateToProps(state) {
     return {

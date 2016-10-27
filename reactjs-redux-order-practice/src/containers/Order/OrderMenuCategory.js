@@ -1,7 +1,7 @@
 import {connect} from 'react-redux'
-import {changeCategoryBy} from '../actions/categories'
-import {resetMenuPage} from '../actions/pages'
-import OrderMenuCategory from '../components/OrderMenuCategory.jsx'
+import {changeCategoryBy} from '../../actions/ui/Order/categories'
+import {resetMenuPage} from '../../actions/ui/Order/pages'
+import OrderMenuCategory from '../../components/Order/OrderMenuCategory.jsx'
 
 function mapStateToProps(state) {
     return {categories: state.categories.records, selectedId: state.categories.selectedId}

@@ -15,8 +15,8 @@ php -S 0.0.0.0:8080 -t .
  
 環境
 ---
-* PHP 5.5.9
-* V8Js PHP extension
+* PHP 5.5.9 [download](http://windows.php.net/downloads/releases/archives/php-5.5.9-nts-Win32-VC11-x86.zip)
+* V8Js 0.1.3 (PHP extension) [download](http://windows.php.net/downloads/pecl/snaps/v8js/0.1.3/php_v8js-0.1.3-5.5-nts-vc11-x86.zip)
 
 參考
 ---
